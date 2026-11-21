@@ -17,7 +17,9 @@ namespace kpz_lr3
     public partial class Form1 : Form
     {
 
-        private readonly string ConnectionString = "Server=localhost;Database=My db;Integrated Security=True;Encrypt=True;TrustServerCertificate=True;Connect Timeout=10;";
+        private readonly string ConnectionString;
+        private readonly bool isAdmin;
+        //private readonly string ConnectionString = "Server=localhost;Database=My db;Integrated Security=True;Encrypt=True;TrustServerCertificate=True;Connect Timeout=10;";
         private DataTable catalog = new DataTable();
         private DataTable allExercises = new DataTable();
         private DataTable recommendations = new DataTable();
@@ -29,6 +31,20 @@ namespace kpz_lr3
         public Form1()
         {
             InitializeComponent();
+
+            using (var login = new Login())
+            {
+                login.ShowDialog();
+                isAdmin = login.logged_in;
+            }
+
+            SqlConnection conn;
+            if (isAdmin)
+                conn = GetDatabaseConnection("AdminConnection");
+            else
+                conn = GetDatabaseConnection("GuestConnection");
+            ConnectionString = conn.ConnectionString;
+            this.Text += isAdmin ? " — адміністратор" : " — гість (тільки перегляд)";
             var btnAdmin = new Button();
             btnAdmin.Location = new System.Drawing.Point(profile.ClientSize.Width - btnAdmin.Width - 15, 20);
             btnAdmin.Text = "Адмінка";
@@ -85,6 +101,25 @@ namespace kpz_lr3
                 LoadAll();
             }
             catch (Exception ex) { MessageBox.Show(this, ex.Message, "Помилка"); }
+        }
+
+        private static SqlConnection GetDatabaseConnection(string name)
+        {
+            var settings = System.Configuration.ConfigurationManager.ConnectionStrings[name];
+            if (settings == null)
+                throw new InvalidOperationException($"У App.config немає рядка з'єднання \"{name}\".");
+     
+            return new SqlConnection(settings.ConnectionString);
+        }
+
+        private void ShowError(Exception ex)
+        {
+            
+            if (ex is SqlException sql && sql.Number == 229)
+                MessageBox.Show(this, "Недостатньо прав. Увійдіть як адміністратор, щоб змінювати дані.",
+                    "Доступ заборонено", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            else
+                MessageBox.Show(this, ex.Message, "Помилка");
         }
         private void OpenReportsClick(object sender, EventArgs e)
         {

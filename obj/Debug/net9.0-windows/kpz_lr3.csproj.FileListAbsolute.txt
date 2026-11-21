@@ -157,3 +157,12 @@ D:\KPZ\lr3\kpz_lr3\bin\Debug\net9.0-windows\zh-Hans\System.ServiceModel.Primitiv
 D:\KPZ\lr3\kpz_lr3\bin\Debug\net9.0-windows\zh-Hant\System.ServiceModel.Primitives.resources.dll
 D:\KPZ\lr3\kpz_lr3\bin\Debug\net9.0-windows\Reports\RequestsReport.rdlc
 D:\KPZ\lr3\kpz_lr3\bin\Debug\net9.0-windows\Reports\WorkoutsReport.rdlc
+D:\KPZ\lr3\kpz_lr3\bin\Debug\net9.0-windows\System.Configuration.ConfigurationManager.dll
+D:\KPZ\lr3\kpz_lr3\bin\Debug\net9.0-windows\System.Diagnostics.DiagnosticSource.dll
+D:\KPZ\lr3\kpz_lr3\bin\Debug\net9.0-windows\System.Diagnostics.EventLog.dll
+D:\KPZ\lr3\kpz_lr3\bin\Debug\net9.0-windows\System.Security.Cryptography.Pkcs.dll
+D:\KPZ\lr3\kpz_lr3\bin\Debug\net9.0-windows\System.Security.Cryptography.ProtectedData.dll
+D:\KPZ\lr3\kpz_lr3\bin\Debug\net9.0-windows\runtimes\win\lib\net9.0\System.Diagnostics.EventLog.dll
+D:\KPZ\lr3\kpz_lr3\bin\Debug\net9.0-windows\runtimes\win\lib\net9.0\System.Security.Cryptography.Pkcs.dll
+D:\KPZ\lr3\kpz_lr3\obj\Debug\net9.0-windows\kpz_lr3.Login.resources
+D:\KPZ\lr3\kpz_lr3\obj\Debug\net9.0-windows\kpz_lr3.sourcelink.json
