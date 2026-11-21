@@ -9,16 +9,19 @@ namespace kpz_lr3
         static void Main()
         {
 
+            ApplicationConfiguration.Initialize();   // обов'€зково ѕ≈–Ў»ћ р€дком
+
+            bool loggedIn;
             using (var login = new Login())
             {
-                // ’рестик або закритт€ без правильного парол€ завершуЇ програму
                 if (login.ShowDialog() != DialogResult.OK)
-                    return;
+                    return;                           // закрили хрестиком Ч вих≥д
+                loggedIn = login.logged_in;
             }
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
-            ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+
+            Application.Run(new Form1(loggedIn));
         }
     }
 }

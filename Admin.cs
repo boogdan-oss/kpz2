@@ -11,6 +11,7 @@ namespace kpz_lr3
     public partial class Admin : Form
     {
         private readonly string connectionString;
+        private readonly bool readOnly;
         // Білий список: назви таблиць/стовпців не вводяться користувачем.
         private readonly string[] tables = { "Users", "Goals", "Intensities", "Workouts", "Exercises", "WorkoutExercises", "Requests" };
         private readonly string[][] columns = {
@@ -34,10 +35,16 @@ namespace kpz_lr3
 
         // Цей конструктор потрібен також дизайнеру Visual Studio.
         public Admin() : this("Server=localhost;Database=My db;Integrated Security=True;Encrypt=True;TrustServerCertificate=True;Connect Timeout=10;") { }
-        public Admin(string connection)
+        public Admin(string connection, bool readOnly = false)
         {
             InitializeComponent();
             connectionString = connection;
+            this.readOnly = readOnly;
+            if (readOnly)
+            {
+                btnNew.Visible = btnInsert.Visible = btnUpdate.Visible = btnDelete.Visible = false;
+                this.Text += " — тільки перегляд";
+            }
             cmbTable.Items.AddRange(tables);
             cmbReport.Items.AddRange(new object[] {
                 "JOIN: тренування, мета та інтенсивність",
@@ -382,7 +389,7 @@ namespace kpz_lr3
         }
         private void InsertClick(object sender, EventArgs e)
         {
-            if (reportMode) return;
+            if (reportMode||readOnly) return;
             try
             {
                 // CREATE: identity-стовпці виключено зі списку INSERT.
@@ -400,7 +407,7 @@ namespace kpz_lr3
         }
         private void UpdateClick(object sender, EventArgs e)
         {
-            if (reportMode || selectedRow == null) return;
+            if (readOnly ||reportMode || selectedRow == null) return;
             try
             {
                 using (var command = new SqlCommand())
@@ -418,7 +425,7 @@ namespace kpz_lr3
         }
         private void DeleteClick(object sender, EventArgs e)
         {
-            if (reportMode || selectedRow == null) return;
+            if (readOnly || reportMode || selectedRow == null) return;
             if (MessageBox.Show(this, "Видалити вибраний запис із " + TableName + "?", "Підтвердження", MessageBoxButtons.YesNo, MessageBoxIcon.Question) != DialogResult.Yes) return;
             try
             {

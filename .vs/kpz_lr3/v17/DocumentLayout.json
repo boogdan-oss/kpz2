@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "D:\\KPZ\\lr3\\kpz_lr3\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5CA69304-0F83-4A81-83C6-7EDB3C94C9FB}|kpz_lr3.csproj|d:\\kpz\\lr3\\kpz_lr3\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CA69304-0F83-4A81-83C6-7EDB3C94C9FB}|kpz_lr3.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CA69304-0F83-4A81-83C6-7EDB3C94C9FB}|kpz_lr3.csproj|d:\\kpz\\lr3\\kpz_lr3\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CA69304-0F83-4A81-83C6-7EDB3C94C9FB}|kpz_lr3.csproj|solutionrelative:admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5CA69304-0F83-4A81-83C6-7EDB3C94C9FB}|kpz_lr3.csproj|d:\\kpz\\lr3\\kpz_lr3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5CA69304-0F83-4A81-83C6-7EDB3C94C9FB}|kpz_lr3.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,12 +19,8 @@
       "RelativeMoniker": "D:0:0:{5CA69304-0F83-4A81-83C6-7EDB3C94C9FB}|kpz_lr3.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5CA69304-0F83-4A81-83C6-7EDB3C94C9FB}|kpz_lr3.csproj|d:\\kpz\\lr3\\kpz_lr3\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{5CA69304-0F83-4A81-83C6-7EDB3C94C9FB}|kpz_lr3.csproj|D:\\KPZ\\lr3\\kpz_lr3\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5CA69304-0F83-4A81-83C6-7EDB3C94C9FB}|kpz_lr3.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CA69304-0F83-4A81-83C6-7EDB3C94C9FB}|kpz_lr3.csproj|d:\\kpz\\lr3\\kpz_lr3\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5CA69304-0F83-4A81-83C6-7EDB3C94C9FB}|kpz_lr3.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5CA69304-0F83-4A81-83C6-7EDB3C94C9FB}|kpz_lr3.csproj|d:\\kpz\\lr3\\kpz_lr3\\reports.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -29,10 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5CA69304-0F83-4A81-83C6-7EDB3C94C9FB}|kpz_lr3.csproj|D:\\KPZ\\lr3\\kpz_lr3\\reports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5CA69304-0F83-4A81-83C6-7EDB3C94C9FB}|kpz_lr3.csproj|solutionrelative:reports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CA69304-0F83-4A81-83C6-7EDB3C94C9FB}|kpz_lr3.csproj|d:\\kpz\\lr3\\kpz_lr3\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5CA69304-0F83-4A81-83C6-7EDB3C94C9FB}|kpz_lr3.csproj|solutionrelative:admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5CA69304-0F83-4A81-83C6-7EDB3C94C9FB}|kpz_lr3.csproj|D:\\KPZ\\lr3\\kpz_lr3\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -58,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,33 +66,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\KPZ\\lr3\\kpz_lr3\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\KPZ\\lr3\\kpz_lr3\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBcAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-21T14:52:26.614Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Login.cs",
               "DocumentMoniker": "D:\\KPZ\\lr3\\kpz_lr3\\Login.cs",
               "RelativeDocumentMoniker": "Login.cs",
               "ToolTip": "D:\\KPZ\\lr3\\kpz_lr3\\Login.cs",
               "RelativeToolTip": "Login.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAA/wC0AAAANAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAA8wCQAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-21T14:45:36.416Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Login.cs [Design]",
               "DocumentMoniker": "D:\\KPZ\\lr3\\kpz_lr3\\Login.cs",
               "RelativeDocumentMoniker": "Login.cs",
@@ -104,7 +104,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Reports.Designer.cs",
               "DocumentMoniker": "D:\\KPZ\\lr3\\kpz_lr3\\Reports.Designer.cs",
               "RelativeDocumentMoniker": "Reports.Designer.cs",
@@ -112,12 +112,11 @@
               "RelativeToolTip": "Reports.Designer.cs",
               "ViewState": "AgIAABIAAABgmZmZmZkVwA0AAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-21T08:09:28.323Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-21T08:09:28.323Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Reports.cs",
               "DocumentMoniker": "D:\\KPZ\\lr3\\kpz_lr3\\Reports.cs",
               "RelativeDocumentMoniker": "Reports.cs",
@@ -130,25 +129,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Reports.cs [Design]",
               "DocumentMoniker": "D:\\KPZ\\lr3\\kpz_lr3\\Reports.cs",
               "RelativeDocumentMoniker": "Reports.cs",
               "ToolTip": "D:\\KPZ\\lr3\\kpz_lr3\\Reports.cs [Design]",
               "RelativeToolTip": "Reports.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-21T08:03:18.738Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-10-21T08:03:18.738Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "Admin.cs",
               "DocumentMoniker": "D:\\KPZ\\lr3\\kpz_lr3\\Admin.cs",
               "RelativeDocumentMoniker": "Admin.cs",
               "ToolTip": "D:\\KPZ\\lr3\\kpz_lr3\\Admin.cs",
               "RelativeToolTip": "Admin.cs",
-              "ViewState": "AgIAAIcBAAAANDMzMzMtwIEAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAKgBAAAAAAAAAABAPbsBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-20T16:41:46.341Z",
               "EditorCaption": ""
@@ -162,8 +160,7 @@
               "ToolTip": "D:\\KPZ\\lr3\\kpz_lr3\\Admin.cs [Design]",
               "RelativeToolTip": "Admin.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-20T16:41:43.386Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-10-20T16:41:43.386Z"
             },
             {
               "$type": "Document",
@@ -175,8 +172,7 @@
               "RelativeToolTip": "Admin.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-20T16:40:26.2Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-20T16:40:26.2Z"
             },
             {
               "$type": "Document",
@@ -192,13 +188,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Form1.cs",
               "DocumentMoniker": "D:\\KPZ\\lr3\\kpz_lr3\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "D:\\KPZ\\lr3\\kpz_lr3\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG4AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAtwHEAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-15T17:28:09.403Z",
               "EditorCaption": ""

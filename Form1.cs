@@ -17,9 +17,8 @@ namespace kpz_lr3
     public partial class Form1 : Form
     {
 
-        private readonly string ConnectionString;
-        private readonly bool isAdmin;
-        //private readonly string ConnectionString = "Server=localhost;Database=My db;Integrated Security=True;Encrypt=True;TrustServerCertificate=True;Connect Timeout=10;";
+        private readonly string ConnectionString = "Server=localhost;Database=My db;Integrated Security=True;Encrypt=True;TrustServerCertificate=True;Connect Timeout=10;";
+        private readonly bool isGuest;
         private DataTable catalog = new DataTable();
         private DataTable allExercises = new DataTable();
         private DataTable recommendations = new DataTable();
@@ -28,24 +27,28 @@ namespace kpz_lr3
         private int? userId;
         private string reportProfile = "";
 
-        public Form1()
+        public Form1(bool loggedIn = true)
         {
             InitializeComponent();
-
-            using (var login = new Login())
-            {
-                login.ShowDialog();
-                isAdmin = login.logged_in;
-            }
+            isGuest = !loggedIn;
 
             SqlConnection conn;
-            if (isAdmin)
+            if (loggedIn == true)
                 conn = GetDatabaseConnection("AdminConnection");
             else
                 conn = GetDatabaseConnection("GuestConnection");
             ConnectionString = conn.ConnectionString;
-            this.Text += isAdmin ? " — адміністратор" : " — гість (тільки перегляд)";
+
+            this.Text += loggedIn ? " — адміністратор" : " — гість (тільки перегляд)";
+
             var btnAdmin = new Button();
+            btnAdmin.Location = new System.Drawing.Point(profile.ClientSize.Width - btnAdmin.Width - 15, 20);
+            btnAdmin.Text = "Адмінка";
+            btnAdmin.Size = new System.Drawing.Size(130, 32);
+           
+            btnSave.Enabled = !isGuest;
+            btnRecommend.Enabled = !isGuest;
+            profile.Controls.Add(btnAdmin);
             btnAdmin.Location = new System.Drawing.Point(profile.ClientSize.Width - btnAdmin.Width - 15, 20);
             btnAdmin.Text = "Адмінка";
             btnAdmin.Size = new System.Drawing.Size(130, 32);
@@ -88,7 +91,7 @@ namespace kpz_lr3
         {
             try
             {
-                using (var admin = new Admin(ConnectionString))
+                using (var admin = new Admin(ConnectionString,isGuest))
                 {
                     Hide();
                     try { admin.ShowDialog(); }
@@ -107,17 +110,20 @@ namespace kpz_lr3
         {
             var settings = System.Configuration.ConfigurationManager.ConnectionStrings[name];
             if (settings == null)
-                throw new InvalidOperationException($"У App.config немає рядка з'єднання \"{name}\".");
-     
+               
             return new SqlConnection(settings.ConnectionString);
+
+            string connStr = name == "GuestConnection"
+              ? "Server=localhost;Database=My db;User Id=fitness_guest;Password=123456789;Encrypt=True;TrustServerCertificate=True;Connect Timeout=10;"
+              : "Server=localhost;Database=My db;Integrated Security=True;Encrypt=True;TrustServerCertificate=True;Connect Timeout=10;";
+            return new SqlConnection(connStr);// не відкриваємо: Query() відкриває свої
         }
 
         private void ShowError(Exception ex)
         {
-            
-            if (ex is SqlException sql && sql.Number == 229)
-                MessageBox.Show(this, "Недостатньо прав. Увійдіть як адміністратор, щоб змінювати дані.",
-                    "Доступ заборонено", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            if (ex is SqlException sql && sql.Number == 229)   // 229 — немає дозволу
+                MessageBox.Show(this, "Недостатньо прав: гість має доступ тільки на читання.\n\n" + sql.Message,
+                    "Доступ заборонено базою даних", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             else
                 MessageBox.Show(this, ex.Message, "Помилка");
         }
