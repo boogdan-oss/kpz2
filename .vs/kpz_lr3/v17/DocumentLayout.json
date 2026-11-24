@@ -7,16 +7,16 @@
       "RelativeMoniker": "D:0:0:{5CA69304-0F83-4A81-83C6-7EDB3C94C9FB}|kpz_lr3.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{5CA69304-0F83-4A81-83C6-7EDB3C94C9FB}|kpz_lr3.csproj|d:\\kpz\\lr3\\kpz_lr3\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CA69304-0F83-4A81-83C6-7EDB3C94C9FB}|kpz_lr3.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5CA69304-0F83-4A81-83C6-7EDB3C94C9FB}|kpz_lr3.csproj|d:\\kpz\\lr3\\kpz_lr3\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5CA69304-0F83-4A81-83C6-7EDB3C94C9FB}|kpz_lr3.csproj|solutionrelative:admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5CA69304-0F83-4A81-83C6-7EDB3C94C9FB}|kpz_lr3.csproj|d:\\kpz\\lr3\\kpz_lr3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5CA69304-0F83-4A81-83C6-7EDB3C94C9FB}|kpz_lr3.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CA69304-0F83-4A81-83C6-7EDB3C94C9FB}|kpz_lr3.csproj|d:\\kpz\\lr3\\kpz_lr3\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5CA69304-0F83-4A81-83C6-7EDB3C94C9FB}|kpz_lr3.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5CA69304-0F83-4A81-83C6-7EDB3C94C9FB}|kpz_lr3.csproj|D:\\KPZ\\lr3\\kpz_lr3\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -66,7 +66,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\KPZ\\lr3\\kpz_lr3\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -79,13 +79,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Login.cs",
               "DocumentMoniker": "D:\\KPZ\\lr3\\kpz_lr3\\Login.cs",
               "RelativeDocumentMoniker": "Login.cs",
               "ToolTip": "D:\\KPZ\\lr3\\kpz_lr3\\Login.cs",
               "RelativeToolTip": "Login.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAA8wCQAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-21T14:45:36.416Z",
               "EditorCaption": ""
@@ -99,8 +99,7 @@
               "ToolTip": "D:\\KPZ\\lr3\\kpz_lr3\\Login.cs [Design]",
               "RelativeToolTip": "Login.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-21T14:44:32.072Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-11-21T14:44:32.072Z"
             },
             {
               "$type": "Document",
@@ -112,7 +111,8 @@
               "RelativeToolTip": "Reports.Designer.cs",
               "ViewState": "AgIAABIAAABgmZmZmZkVwA0AAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-21T08:09:28.323Z"
+              "WhenOpened": "2026-10-21T08:09:28.323Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -140,7 +140,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Admin.cs",
               "DocumentMoniker": "D:\\KPZ\\lr3\\kpz_lr3\\Admin.cs",
               "RelativeDocumentMoniker": "Admin.cs",
@@ -172,7 +172,8 @@
               "RelativeToolTip": "Admin.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-20T16:40:26.2Z"
+              "WhenOpened": "2026-10-20T16:40:26.2Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -194,7 +195,7 @@
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "D:\\KPZ\\lr3\\kpz_lr3\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAtwHEAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAtwHEAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-15T17:28:09.403Z",
               "EditorCaption": ""

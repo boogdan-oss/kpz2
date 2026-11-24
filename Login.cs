@@ -8,13 +8,13 @@ namespace kpz_lr3
         private const string CorrectLogin = "test";
         private const string CorrectPassword = "1";
 
-        public bool logged_in = false;   // як у методичці: true = адміністратор
+        public bool logged_in = false;   
 
         public Login()
         {
             InitializeComponent();
             textBox2.UseSystemPasswordChar = true;
-            button2.Click += button2_Click;   // button1 уже підключено в дизайнері
+            button2.Click += button2_Click;   
             AcceptButton = button1;
             StartPosition = FormStartPosition.CenterScreen;
         }
